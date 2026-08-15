@@ -1,18 +1,127 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Time Warp Zone Across the Time Types</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Time Warp Zone — Watch by Time Type</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0b1f33;color:#f3ead8;font-family:Arial,sans-serif}
-.wrap{padding:7px 10px 9px}
-.title{font-family:Georgia,serif;font-size:19px;font-weight:400;margin:0 0 18px}
-.strip{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
-.item{color:#f3ead8;text-decoration:none;min-width:0}
-.thumb{display:block;position:relative;aspect-ratio:2.4/1;overflow:hidden;border-bottom:2px solid #c6a15b;background:#132f49}
-.thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.label{position:absolute;left:0;right:0;bottom:0;padding:10px 4px 3px;background:linear-gradient(transparent,rgba(5,17,29,.92));font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.item:hover .label{color:#c6a15b}
-@media(max-width:620px){.strip{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:360px){.strip{grid-template-columns:repeat(2,1fr)}}
-</style></head><body><div class="wrap">
-<h2 class="title">See Time Warp Zone Across the Time Types</h2>
-<nav class="strip" aria-label="Time Warp Zone Shorts by Time Type"><a class="item" href="https://youtube.com/shorts/YuqOwe0SGMc" target="_blank" aria-label="Watch Borrowed Time with WeekendRaider"><span class="thumb"><img src="WeekendRaider.png" alt=""><span class="label">Borrowed Time</span></span></a><a class="item" href="https://youtube.com/shorts/XQnDFSfCpPo" target="_blank" aria-label="Watch Clock-In Time with GoneGrinding"><span class="thumb"><img src="GoneGrinding.png" alt=""><span class="label">Clock-In Time</span></span></a><a class="item" href="https://youtube.com/shorts/P9Xx2mTRYXo" target="_blank" aria-label="Watch Connected Time with CrowdedVonDinghy"><span class="thumb"><img src="CrowdedVonDinghy.png" alt=""><span class="label">Connected Time</span></span></a><a class="item" href="https://youtube.com/shorts/Qr5_1MO-6w4" target="_blank" aria-label="Watch Exploration Time with NorthWhere"><span class="thumb"><img src="NorthWhere.png" alt=""><span class="label">Exploration Time</span></span></a><a class="item" href="https://youtube.com/shorts/X8gXHjnHQk0" target="_blank" aria-label="Watch Mastery Time with PrecisionSundial"><span class="thumb"><img src="PrecisionSundial.png" alt=""><span class="label">Mastery Time</span></span></a><a class="item" href="https://youtube.com/shorts/wuaaKD5h5zg" target="_blank" aria-label="Watch Overtime with FiveMinWarning"><span class="thumb"><img src="FiveMinWarning.png" alt=""><span class="label">Overtime</span></span></a><a class="item" href="https://youtube.com/shorts/D0I41wVkaic" target="_blank" aria-label="Watch Play Time with LilThriller"><span class="thumb"><img src="LilThriller.png" alt=""><span class="label">Play Time</span></span></a><a class="item" href="https://youtube.com/shorts/azoKctrlTfM" target="_blank" aria-label="Watch Recovery Time with PlayerOne"><span class="thumb"><img src="PlayerOne.png" alt=""><span class="label">Recovery Time</span></span></a></nav></div></body></html>
+  :root{
+    --navy:#0b1f33;
+    --gold:#d4af37;
+    --cream:#f4e7c1;
+    --muted:#d7d9dc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--navy);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .wrap{
+    max-width:1500px;
+    margin:0 auto;
+    padding:22px 22px 20px;
+  }
+  h2{
+    margin:0 0 16px;
+    text-align:center;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:30px;
+    font-weight:500;
+    color:var(--cream);
+    letter-spacing:.2px;
+  }
+  .strip{
+    display:grid;
+    grid-template-columns:repeat(8,minmax(0,1fr));
+    gap:10px;
+  }
+  a.card{
+    min-width:0;
+    text-decoration:none;
+    color:white;
+    text-align:center;
+  }
+  .imgbox{
+    aspect-ratio:1/1;
+    overflow:hidden;
+    border-bottom:4px solid var(--gold);
+    background:#081623;
+  }
+  .imgbox img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .label{
+    padding-top:7px;
+    font-size:13px;
+    line-height:1.16;
+    font-weight:700;
+  }
+  .label span{
+    display:block;
+    margin-top:2px;
+    color:var(--muted);
+    font-size:11px;
+    font-weight:400;
+  }
+  @media(max-width:900px){
+    .strip{grid-template-columns:repeat(4,1fr)}
+  }
+  @media(max-width:520px){
+    .strip{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Watch Time Warp Zone by Time Type</h2>
+    <div class="strip">
+
+      <a class="card" href="https://youtube.com/shorts/YuqOwe0SGMc" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="WeekendRaider.png" alt="WeekendRaider — Borrowed Time"></div>
+        <div class="label">Borrowed Time<span>WeekendRaider</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/XQnDFSfCpPo" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="GoneGrinding.png" alt="GoneGrinding — Clock-In Time"></div>
+        <div class="label">Clock-In Time<span>GoneGrinding</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/P9Xx2mTRYXo" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="CrowdedVonDinghy.png" alt="CrowdedVonDinghy — Connected Time"></div>
+        <div class="label">Connected Time<span>CrowdedVonDinghy</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/Qr5_1MO-6w4" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="NorthWhere.png" alt="NorthWhere — Exploration Time"></div>
+        <div class="label">Exploration Time<span>NorthWhere</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/X8gXHjnHQk0" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="PrecisionSundial.png" alt="PrecisionSundial — Mastery Time"></div>
+        <div class="label">Mastery Time<span>PrecisionSundial</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/wuaaKD5h5zg" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="FiveMinWarning.png" alt="FiveMinWarning — Overtime"></div>
+        <div class="label">Overtime<span>FiveMinWarning</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/qfgU-6zhkU0?feature=share" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="LilThriller.png" alt="LilThriller — Play Time"></div>
+        <div class="label">Play Time<span>LilThriller</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/shorts/azoKctrlTfM" target="_blank" rel="noopener">
+        <div class="imgbox"><img src="PlayerOne.png" alt="PlayerOne — Recovery Time"></div>
+        <div class="label">Recovery Time<span>PlayerOne</span></div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
